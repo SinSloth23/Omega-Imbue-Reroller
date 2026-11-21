@@ -1,3 +1,14 @@
+<p align="center">
+  <img src="assets/OmegaRR_Logo.png" width="240"
+       alt="Omega Imbue Reroller">
+</p>
+
+<h1 align="center">OMEGA IMBUE REROLLER</h1>
+<h3 align="center">T E K  E D I T I O N</h3>
+
+<p align="center">
+  Automated Imbue Rerolling for ARK: Survival Ascended — Omega
+</p>
 
 <div align="center">
 
