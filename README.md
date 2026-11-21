@@ -1,400 +1,206 @@
+
 <p align="center">
-  <img src="assets/OmegaRR_Logo.png" width="240"
-       alt="Omega Imbue Reroller">
+  <img src="assets/OmegaRR_Logo.png" width="260" alt="Omega Imbue Reroller">
 </p>
 
 <h1 align="center">OMEGA IMBUE REROLLER</h1>
-<h3 align="center">T E K  E D I T I O N</h3>
+<h3 align="center">ＴＥＫ ＥＤＩＴＩＯＮ</h3>
 
 <p align="center">
-  Automated Imbue Rerolling for ARK: Survival Ascended — Omega
+  Advanced Automated Imbue Rerolling for<br>
+  ARK: Survival Ascended — Omega
 </p>
 
-<div align="center">
+<p align="center">
+  <img src="https://img.shields.io/badge/VERSION-1.0_BETA_6-00D9FF?style=for-the-badge">
+  <img src="https://img.shields.io/badge/PLATFORM-WINDOWS-0078D4?style=for-the-badge">
+  <img src="https://img.shields.io/badge/STATUS-ACTIVE_DEVELOPMENT-22C55E?style=for-the-badge">
+  <img src="https://img.shields.io/badge/STABILITY-2000_ROLLS_TESTED-22C55E?style=for-the-badge">
+</p>
 
-# OMEGA // IMBUE REROLLER
-### T E K &nbsp; E D I T I O N
-
-**Automated Imbue Rerolling for ARK: Survival Ascended**
-
-![Version](https://img.shields.io/github/v/release/SinSloth23/Omega-Imbue-Reroller?include_prereleases&label=VERSION&color=00BCD4&style=for-the-badge)
-![Platform](https://img.shields.io/badge/PLATFORM-WINDOWS-0078D4?style=for-the-badge)
-![Status](https://img.shields.io/badge/STATUS-BETA-FFA500?style=for-the-badge)
-![Price](https://img.shields.io/badge/PRICE-FREE-2EA44F?style=for-the-badge)
-
-[DOWNLOAD](../../releases) • [REPORT A BUG](../../issues)
+<p align="center">
+  <a href="https://github.com/SinSloth23/Omega-Imbue-Reroller/releases/tag/v1.0-beta.6">
+    <img src="https://img.shields.io/badge/DOWNLOAD-BETA_6-00D9FF?style=for-the-badge&logo=github">
+  </a>
+</p>
 
 ---
 
-</div>
+## Overview
 
-## ⚡ Overview
+Omega Imbue Reroller is a standalone Windows application designed specifically for the ARK: Survival Ascended Omega community.
 
-Omega Imbue Reroller is a standalone utility designed
-for the ARK Omega community.
+The application uses optical character recognition (OCR) to read item imbues directly from the game, automatically rerolling until your configured requirements are met.
 
-Automatically reroll your equipment imbues, configure
-your desired stats, and let the application stop when
-your requirements are met.
+Spend less time manually rerolling and more time playing.
 
-Track your lifetime imbue records, set advanced item
-requirements, automatically recover from temporary
-errors and calculate potential Multiply Curse values.
+---
 
-**Less clicking. More playing.**
-
-## ◆ Features
+## Key Features
 
 | Feature | Description |
-| :--- | :--- |
-| Smart Recognition | Automatic OCR-based stat detection |
-| OCR Correction | Automatic correction of minor stat-name recognition errors |
-| Custom Targets | Configure multiple stat requirements |
-| Minimum Imbues | Require a minimum number of imbues on an item |
-| Target Tracking | Dedicated required, current and best-value display |
-| Target Highlighting | Highlighted and pinned target statistics |
-| ALL / ANY Matching | Flexible target matching |
-| Essence Selection | All 12 essence tiers supported |
-| Performance Mode | High-speed single-pass OCR |
-| Multi-Monitor Support | Select the display running ARK |
-| Adaptive Recovery | Handles delayed game responses |
-| Automatic Resume | Automatically resumes after verified recovery |
-| Recovery Configuration | Custom recovery delays, intervals and attempt limits |
-| Batch Management | Configurable maximum roll limits |
-| Session Statistics | Track rolls, clicks and performance |
-| Best Values | Organized, scrollable batch statistics |
-| Lifetime Records | Permanent highest observed imbue values |
-| Lifetime Rolls | Persistent completed reroll counter |
-| Imbue Count Records | Most imbues ever observed on a single item |
-| Curse Projections | Automatically calculates potential Multiply Curse values |
-| Safety Protection | Suspends clicks when unsafe conditions are detected |
-| Tek Interface | Dark, gaming-inspired application design |
-| Portable | No separate Python or OCR installation |
-
-## ◆ Supported Essences
-
-| | | | | | |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| ⚪ Basic | 🟢 Delta | 🔵 Gamma | 🟣 Beta | 🟡 Alpha | 🩵 Elite |
-| ⚪ Prime | 🟠 Apex | 🩷 Ultimate | 🔴 Ancient | ⚫ Endless | 🌈 Omega |
-
-## ◆ Download
-
-### [⬇ Download the Latest Release](../../releases)
-
-Designed for Windows 10 and Windows 11 (64-bit).
-
-No separate Python or Tesseract installation required.
-
-Download the Windows release ZIP from the release assets.
-
-Previous versions remain available on the Releases page.
-
-## ◆ Getting Started
-
-1. Download the Windows release ZIP.
-2. Extract the entire ZIP into a folder.
-3. Launch `OmegaImbueReroller.exe`.
-4. Open the Imbue Workbench in ARK.
-5. Select the monitor running ARK.
-6. Select your desired essence.
-7. Calibrate the stat panel and essence click location.
-8. Use **Read Current Stats** to verify recognition.
-9. Configure your desired imbue requirements.
-10. Optionally configure a minimum total imbue count.
-11. Configure your automatic recovery settings.
-12. Test using Dry Run before starting.
-13. Select **Start New Batch**.
-
-## ◆ Advanced Target Configuration
-
-Configure individual stat requirements alongside an
-optional minimum total imbue count.
-
-For example:
-
-- Magic Find: 40% or higher
-- Minimum Total Imbues: 9
-
-| Magic Find | Total Imbues | Result |
-| :---: | :---: | :--- |
-| 45% | 7 | Continue Rolling |
-| 38% | 9 | Continue Rolling |
-| 40% | 9 | Target Achieved |
-| 48% | 10 | Target Achieved |
-
-The minimum imbue requirement is independent of
-ALL / ANY stat matching.
-
-Both the configured stat matching criteria and the
-minimum imbue count must be satisfied.
-
-## ◆ Automatic Recovery
-
-Omega Imbue Reroller can attempt to recover automatically
-from temporary recognition errors and delayed game responses.
-
-During recovery, automatic clicking is suspended.
-
-The application attempts to verify the current workbench
-state and checks the active targets before resuming.
-
-| Recovery Setting | Default |
-| :--- | :--- |
-| Auto-Recovery | Enabled |
-| Initial Recovery Delay | 3 seconds |
-| Recovery Retry Interval | 5 seconds |
-| Maximum Recovery Attempts | 10 |
-
-Manual pauses and emergency stops will not trigger
-automatic resumption.
-
-If the application cannot safely recover, manual
-intervention is required.
-
-**Do not change equipment or workbenches during
-automatic recovery.**
-
-Screen-based verification cannot guarantee equipment
-identity.
-
-## ◆ Lifetime Records
-
-The dedicated Lifetime Records tab permanently tracks
-the highest observed value for each numerical imbue stat.
-
-### Lifetime Statistics
-
-- Total completed lifetime rolls
-- Most imbues observed on a single item
-- Highest observed value for all 24 numerical imbue stats
-
-Lifetime records are automatically saved and are
-independent of individual batch statistics.
-
-Starting a new batch or restarting the application
-does not reset lifetime records.
-
-Individual stat records only increase when a higher
-value is verified.
-
-These values represent observed records, not confirmed
-theoretical maximums.
-
-## ◆ Multiply Curse Projections
-
-When a successful roll is achieved, the application
-displays potential Multiply Curse values alongside the
-actual imbue values.
-
-**Curse Multiplier = 1 + (Total Imbue Text Lines / 2)**
-
-**Potential Cursed Value = Actual Value × Curse Multiplier**
-
-### Multiplier Reference
-
-| Imbue Lines | Multiplier | 40% Magic Find |
-| :---: | :---: | :---: |
-| 1 | 1.5x | 60% |
-| 2 | 2x | 80% |
-| 3 | 2.5x | 100% |
-| 4 | 3x | 120% |
-| 5 | 3.5x | 140% |
-| 6 | 4x | 160% |
-| 7 | 4.5x | 180% |
-| 8 | 5x | 200% |
-| 9 | 5.5x | 220% |
-| 10 | 6x | 240% |
-
-Each projection assumes that the individual stat
-receives Multiply Curse.
-
-Projected values are informational only and do not
-affect target matching or lifetime stat records.
-
-## ◆ Keyboard Controls
-
-| Key | Function |
-| :---: | :--- |
-| **F8** | Pause / Resume Active Batch |
-| **F9** | Emergency Stop |
-
-## ◆ Recommended Settings
-
-| Setting | Recommended Value |
-| :--- | :--- |
-| Game Display Mode | Windowed Fullscreen |
-| Minimum Wait | 0.100 seconds |
-| Adaptive Detection | Enabled |
-| Verification | Performance |
-| Auto-Recovery | Enabled |
-| Initial Recovery Delay | 3 seconds |
-| Recovery Retry Interval | 5 seconds |
-| Maximum Recovery Attempts | 10 |
-| Initial Test Batch | 10 rolls |
-
-Increase the minimum wait if your game or server
-cannot reliably keep up.
-
-## ◆ Development Status
-
-This application is currently in public beta testing.
-
-Feedback, bug reports and feature requests are welcome.
-
-## ◆ Changelog
-
-### V1.0 Beta 5 — Recovery, Lifetime Records & Curse Projections
-
-**Automatic Recovery**
-
-- Automatic recovery from temporary errors
-- Automatic batch resumption after verification
-- Configurable recovery settings
-- Preserved active batch targets and statistics
-- Recovery checks before resuming clicks
-- Manual pause and emergency stop protections
-
-**Advanced Targets**
-
-- Optional minimum total imbue requirement
-- Current imbue count tracking
-- Highest batch imbue count tracking
-- Integration with existing ALL / ANY matching
-
-**Lifetime Records**
-
-- Dedicated Lifetime Records tab
-- Persistent highest observed imbue values
-- Lifetime completed roll counter
-- Most imbues observed on a single item
-- Automatic record saving
-- Additional verification of potential new records
-
-**Curse Projections**
-
-- Automatic Multiply Curse calculations
-- Actual and projected cursed values
-- Imbue line-based multiplier calculations
-- Successful roll results display
-
-### V1.0 Beta 4 — Target Tracking & OCR Improvements
-
-**Interface Improvements**
-
-- Dedicated target tracking panel
-- Required, current and best-value tracking
-- Bold cyan highlighting for targeted stats
-- Green highlighting for satisfied requirements
-- Targeted stats pinned to the top
-- Organized, scrollable best-values table
-
-**Recognition Improvements**
-
-- Case-insensitive stat recognition
-- Automatic minor OCR spelling correction
-- Duplicate stat-name prevention
-- Improved punctuation and whitespace handling
-- Standardized recognition of 24 known imbue stats
-- Diagnostic logging for unrecognized stats
-- Protection against conflicting duplicate values
-- Preserved distinction between flat and percentage stats
-
-**Performance**
-
-- No additional OCR passes during normal rolling
-- Existing high-speed rolling engine retained
-- Adaptive lag recovery retained
-
-### V1.0 Beta 3 — Multi-Monitor Update
-
-- Dedicated ARK monitor selection
-- Improved multi-monitor calibration
-- Display resolution and position identification
-- Improved Windows display scaling support
-- Support for negative monitor coordinates
-- Calibration validation when display layouts change
-- Existing OCR performance retained
-
-### V1.0 Beta 2 — Recognition & Batch Improvements
-
-- Searchable stat selection dropdown
-- Improved stat matching
-- Automatic punctuation normalization
-- Independent batch and resume controls
-- Improved target configuration management
-- Standalone Windows packaging
-
-### V1.0 Beta 1 — Initial Release
-
-- Initial standalone Windows release
-- Automated imbue rerolling
-- Configurable target requirements
-- All 12 essence tiers supported
-- Tek-inspired interface
-- Adaptive lag recovery
-- Emergency stop and pause controls
-
-## ◆ Bug Reports
-
-Found a problem?
-
-[Submit a bug report here.](../../issues)
-
-Please include:
-
-- Application version
-- Screen resolution
-- Number of connected monitors
-- Windows version
-- Description of the problem
-- Diagnostic log, with personal information removed
-
-## ◆ Community Feedback
-
-Omega Imbue Reroller is actively being improved based
-on feedback from the ARK Omega community.
-
-Many features have been introduced directly because
-of community suggestions.
-
-Thank you to everyone participating in beta testing,
-reporting bugs and suggesting new features.
-
-Have an idea for improving the application?
-
-[Submit a feature request here.](../../issues)
-
-## ⚠ Disclaimer
-
-This is an unofficial community-developed application.
-It is not affiliated with Studio Wildcard or the
-ARK Omega development team.
-
-Ensure automation is permitted by your server rules
-before using this utility.
-
-OCR recognition is not guaranteed to be completely
-accurate. Test on disposable equipment first.
-
-Observed lifetime records and projected cursed values
-are informational and depend on accurate recognition.
-
-Do not change equipment during automatic recovery.
-
-The beta executable is unsigned. Verify downloads
-and never disable antivirus protection to run it.
+|---|---|
+| Automated Rerolling | Automatically reroll items until your configured targets are met. |
+| OCR Recognition | Reads imbue names and values directly from the game screen. |
+| Actual Stat Targeting | Search for specific raw imbue values. |
+| Post-Curse Targeting | Search for projected values after applying Multiply Curse. |
+| Multiple Stat Targets | Configure multiple requirements using ALL or ANY matching. |
+| Minimum Imbues | Require a minimum number of imbues on an item. |
+| Live Target Tracking | Monitor required, current, and best session values. |
+| Automatic Recovery | Recover from temporary OCR errors without additional essence clicks during recovery. |
+| Lifetime Records | Permanently track the highest raw imbue values observed. |
+| Performance Mode | Fast single-pass OCR during normal rerolling. |
+| TEK Interface | Custom high-contrast sci-fi interface. |
+| Emergency Controls | Pause, resume, or immediately stop automation. |
 
 ---
 
-<div align="center">
+## Performance & Stability
 
-### OMEGA // IMBUE REROLLER
+Beta 6 successfully completed a live test of **2,000 consecutive rerolls without failures, freezes, or recovery hangs.**
 
-**Built for the Omega community.**
+| Metric | Result |
+|---|---|
+| Consecutive test rolls | 2,000 |
+| Failures during test | 0 |
+| Recovery hangs during test | 0 |
+| Typical roll duration | 700–800 ms |
+| Estimated throughput | 75–86 rolls/minute |
 
-TEK EDITION • LESS CLICKING. MORE PLAYING.
+Performance may vary depending on hardware, resolution, game performance, and OCR settings.
 
-[DOWNLOAD](../../releases) • [REPORT A BUG](../../issues)
+---
 
-</div>
+## Post-Curse Targeting
+
+Search for the projected value of an imbue after applying Multiply Curse.
+
+The calculation uses the total number of imbues on the current item.
+
+**Multiplier = 1 + (Total Imbues ÷ 2)**
+
+| Total Imbues | Multiplier | Raw Magic Find | Projected Magic Find |
+|---:|---:|---:|---:|
+| 6 | 4× | 40% | 160% |
+| 8 | 5× | 40% | 200% |
+| 9 | 5.5× | 40% | 220% |
+| 10 | 6× | 40% | 240% |
+| 11 | 6.5× | 40% | 260% |
+| 12 | 7× | 40% | 280% |
+
+Each target can independently use Actual or Post-Curse matching.
+
+Projected values are estimates. The application does not automatically apply Multiply Curse.
+
+---
+
+## Lifetime Records
+
+The application automatically maintains persistent records across rerolling sessions.
+
+- Total lifetime rolls.
+- Highest number of imbues observed on one item.
+- Highest observed value for each imbue stat.
+- Automatically saved records.
+
+> [!IMPORTANT]
+> Lifetime Records exclusively track raw, pre-curse imbue values. Projected Post-Curse values are never included in Lifetime Records.
+
+Records represent the highest observed values, not theoretical maximums.
+
+---
+
+## Installation
+
+1. Visit the [Releases](https://github.com/SinSloth23/Omega-Imbue-Reroller/releases) page.
+2. Download the latest compiled Windows application ZIP.
+3. Extract the ZIP into a folder.
+4. Launch the application.
+
+The compiled release does not require a separate Python installation.
+
+---
+
+## Getting Started
+
+1. Launch ARK: Survival Ascended.
+2. Open the Omega imbue workbench.
+3. Place the item and rerolling essence in their appropriate locations.
+4. Launch Omega Imbue Reroller.
+5. Calibrate the item stat panel.
+6. Calibrate the essence click position.
+7. Test OCR recognition.
+8. Configure your desired stat targets.
+9. Select Actual or Post-Curse targeting.
+10. Start rerolling.
+
+Keep the calibrated game interface visible and unobstructed during operation.
+
+---
+
+## Keyboard Controls
+
+| Key | Function |
+|---|---|
+| F8 | Pause / Resume |
+| F9 | Emergency Stop |
+
+---
+
+## Beta 6 Highlights
+
+- Post-Curse stat targeting.
+- Improved automatic OCR recovery.
+- Simplified target-based rerolling.
+- Removed unnecessary imbue-count restrictions.
+- Removed essence-icon matching restrictions.
+- Additional verification of potential winning rolls.
+- Improved session personal-best tracking.
+- Detailed recovery diagnostics.
+- Redesigned high-contrast interface.
+- Official Omega RR application icon.
+- Successfully completed a 2,000-roll stability test.
+
+---
+
+## Feedback & Bug Reports
+
+Community feedback helps improve the application.
+
+Please use the [GitHub Issues](https://github.com/SinSloth23/Omega-Imbue-Reroller/issues) page to report:
+
+- Bugs and unexpected behavior.
+- OCR recognition problems.
+- Performance issues.
+- Feature requests.
+- Interface suggestions.
+
+When reporting an issue, please include your application version, screenshots, relevant logs, and a description of what happened.
+
+---
+
+## Disclaimer
+
+Omega Imbue Reroller is an independently developed, unofficial companion application.
+
+It is not affiliated with Studio Wildcard or the developers of ARK Omega.
+
+Always follow the rules of your server regarding automation and third-party applications.
+
+This software remains in active beta development. Use at your own discretion.
+
+---
+
+<p align="center">
+  <img src="assets/OmegaRR_Logo.png" width="90">
+</p>
+
+<h3 align="center">DEVELOPED BY SINSLOTH23</h3>
+
+<p align="center">
+  Built for the Omega community.
+</p>
+
+<p align="center">
+  <b>LESS REROLLING. MORE PLAYING.</b>
+</p>
