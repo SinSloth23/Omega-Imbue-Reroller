@@ -12,15 +12,15 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/VERSION-1.0_BETA_6-00D9FF?style=for-the-badge">
+  <img src="https://img.shields.io/badge/VERSION-2.0.0--beta-00D9FF?style=for-the-badge">
   <img src="https://img.shields.io/badge/PLATFORM-WINDOWS-0078D4?style=for-the-badge">
   <img src="https://img.shields.io/badge/STATUS-ACTIVE_DEVELOPMENT-22C55E?style=for-the-badge">
-  <img src="https://img.shields.io/badge/STABILITY-2000_ROLLS_TESTED-22C55E?style=for-the-badge">
+  <img src="https://img.shields.io/badge/V1_TEST-2000_ROLLS-22C55E?style=for-the-badge">
 </p>
 
 <p align="center">
-  <a href="https://github.com/SinSloth23/Omega-Imbue-Reroller/releases/tag/v1.0-beta.6">
-    <img src="https://img.shields.io/badge/DOWNLOAD-BETA_6-00D9FF?style=for-the-badge&logo=github">
+  <a href="https://github.com/SinSloth23/Omega-Imbue-Reroller/releases/tag/v2.0.0-beta">
+    <img src="https://img.shields.io/badge/DOWNLOAD-V2.0.0--BETA-00D9FF?style=for-the-badge&logo=github">
   </a>
 </p>
 
@@ -36,6 +36,19 @@ Spend less time manually rerolling and more time playing.
 
 ---
 
+## What's New in v2.0.0-beta
+
+- Dedicated Gear and Saddle modes, with independent calibration, stat libraries and lifetime records.
+- Saddle targeting uses actual imbue values; Gear supports Actual and projected Post-Curse targeting.
+- Saved target presets with import and export.
+- Custom fonts, colors, six built-in themes and theme import/export.
+- Customizable sound notifications for successful targets, exhausted roll limits and new lifetime records.
+- Optional session statistics and screenshot/OCR data collection.
+- Built-in GitHub update checker.
+- Target Achieved notifications display only qualifying selected targets.
+
+---
+
 ## Key Features
 
 | Feature | Description |
@@ -43,12 +56,12 @@ Spend less time manually rerolling and more time playing.
 | Automated Rerolling | Automatically reroll items until your configured targets are met. |
 | OCR Recognition | Reads imbue names and values directly from the game screen. |
 | Actual Stat Targeting | Search for specific raw imbue values. |
-| Post-Curse Targeting | Search for projected values after applying Multiply Curse. |
+| Post-Curse Targeting | Search for projected Gear values after applying Multiply Curse. |
 | Multiple Stat Targets | Configure multiple requirements using ALL or ANY matching. |
 | Minimum Imbues | Require a minimum number of imbues on an item. |
 | Live Target Tracking | Monitor required, current, and best session values. |
 | Automatic Recovery | Recover from temporary OCR errors without additional essence clicks during recovery. |
-| Lifetime Records | Permanently track the highest raw imbue values observed. |
+| Lifetime Records | Track the highest raw imbue values separately for Gear and Saddles. |
 | Performance Mode | Fast single-pass OCR during normal rerolling. |
 | TEK Interface | Custom high-contrast sci-fi interface. |
 | Emergency Controls | Pause, resume, or immediately stop automation. |
@@ -57,7 +70,7 @@ Spend less time manually rerolling and more time playing.
 
 ## Performance & Stability
 
-Beta 6 successfully completed a live test of **2,000 consecutive rerolls without failures, freezes, or recovery hangs.**
+The previous V1 Beta 6 release successfully completed a live test of **2,000 consecutive rerolls without failures, freezes, or recovery hangs.**
 
 | Metric | Result |
 |---|---|
@@ -67,13 +80,15 @@ Beta 6 successfully completed a live test of **2,000 consecutive rerolls without
 | Typical roll duration | 700–800 ms |
 | Estimated throughput | 75–86 rolls/minute |
 
+These figures are from V1 Beta 6 testing, not a V2 benchmark. V2 has been locally tested by the developer.
+
 Performance may vary depending on hardware, resolution, game performance, and OCR settings.
 
 ---
 
 ## Post-Curse Targeting
 
-Search for the projected value of an imbue after applying Multiply Curse.
+For Gear only, search for the projected value of an imbue after applying Multiply Curse. Saddles use actual values only.
 
 The calculation uses the total number of imbues on the current item.
 
@@ -96,7 +111,7 @@ Projected values are estimates. The application does not automatically apply Mul
 
 ## Lifetime Records
 
-The application automatically maintains persistent records across rerolling sessions.
+The application automatically maintains persistent, independent Gear and Saddle records across rerolling sessions.
 
 - Total lifetime rolls.
 - Highest number of imbues observed on one item.
@@ -113,9 +128,9 @@ Records represent the highest observed values, not theoretical maximums.
 ## Installation
 
 1. Visit the [Releases](https://github.com/SinSloth23/Omega-Imbue-Reroller/releases) page.
-2. Download the latest compiled Windows application ZIP.
+2. Download `omega-imbue-reroller-2.0.0-beta-windows-x64.zip` from the [V2 beta release](https://github.com/SinSloth23/Omega-Imbue-Reroller/releases/tag/v2.0.0-beta).
 3. Extract the ZIP into a folder.
-4. Launch the application.
+4. Launch `OmegaImbueReroller.exe`.
 
 The compiled release does not require a separate Python installation.
 
@@ -127,11 +142,11 @@ The compiled release does not require a separate Python installation.
 2. Open the Omega imbue workbench.
 3. Place the item and rerolling essence in their appropriate locations.
 4. Launch Omega Imbue Reroller.
-5. Calibrate the item stat panel.
+5. Select Gear or Saddles and calibrate the item stat panel.
 6. Calibrate the essence click position.
 7. Test OCR recognition.
 8. Configure your desired stat targets.
-9. Select Actual or Post-Curse targeting.
+9. For Gear, select Actual or Post-Curse targeting; Saddles use Actual only.
 10. Start rerolling.
 
 Keep the calibrated game interface visible and unobstructed during operation.
@@ -147,7 +162,17 @@ Keep the calibrated game interface visible and unobstructed during operation.
 
 ---
 
-## Beta 6 Highlights
+## Settings & Customization
+
+Use Settings to customize appearance, sound notifications and update preferences, manage saved presets, and enable optional screenshot/OCR collection. Session statistics can be shown or hidden to keep the main interface uncluttered.
+
+Screenshot collection during live rerolling consumes essence; leave it disabled unless needed.
+
+---
+
+## V1 Beta 6 Highlights (Previous Release)
+
+The [previous V1 Beta 6 release](https://github.com/SinSloth23/Omega-Imbue-Reroller/releases/tag/v1.0-beta.6) remains available as a fallback.
 
 - Post-Curse stat targeting.
 - Improved automatic OCR recovery.
