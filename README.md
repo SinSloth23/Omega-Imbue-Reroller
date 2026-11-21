@@ -5,7 +5,7 @@
 
 **Automated Imbue Rerolling for ARK: Survival Ascended**
 
-![Version](https://img.shields.io/badge/VERSION-1.0_BETA_2-00BCD4?style=for-the-badge)
+![Version](https://img.shields.io/badge/VERSION-1.0_BETA_4-00BCD4?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/PLATFORM-WINDOWS-0078D4?style=for-the-badge)
 ![Status](https://img.shields.io/badge/STATUS-BETA-FFA500?style=for-the-badge)
 ![Price](https://img.shields.io/badge/PRICE-FREE-2EA44F?style=for-the-badge)
