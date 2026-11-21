@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # OMEGA // IMBUE REROLLER
@@ -5,7 +6,7 @@
 
 **Automated Imbue Rerolling for ARK: Survival Ascended**
 
-![Version](https://img.shields.io/badge/VERSION-1.0_BETA_4-00BCD4?style=for-the-badge)
+![Version](https://img.shields.io/github/v/release/SinSloth23/Omega-Imbue-Reroller?include_prereleases&label=VERSION&color=00BCD4&style=for-the-badge)
 ![Platform](https://img.shields.io/badge/PLATFORM-WINDOWS-0078D4?style=for-the-badge)
 ![Status](https://img.shields.io/badge/STATUS-BETA-FFA500?style=for-the-badge)
 ![Price](https://img.shields.io/badge/PRICE-FREE-2EA44F?style=for-the-badge)
@@ -32,13 +33,18 @@ your requirements are met.
 | Feature | Description |
 | :--- | :--- |
 | Smart Recognition | Automatic OCR-based stat detection |
+| OCR Correction | Automatic correction of minor stat-name recognition errors |
 | Custom Targets | Configure multiple stat requirements |
+| Target Tracking | Dedicated required, current and best-value display |
+| Target Highlighting | Highlighted and pinned target statistics |
 | ALL / ANY Matching | Flexible target matching |
 | Essence Selection | All 12 essence tiers supported |
 | Performance Mode | High-speed single-pass OCR |
+| Multi-Monitor Support | Select the display running ARK |
 | Adaptive Recovery | Handles delayed game responses |
 | Batch Management | Configurable maximum roll limits |
 | Session Statistics | Track rolls, clicks and performance |
+| Best Values | Organized, scrollable best-value statistics |
 | Safety Protection | Stops when the game becomes unresponsive |
 | Tek Interface | Dark, gaming-inspired application design |
 | Portable | No separate Python or OCR installation |
@@ -52,13 +58,14 @@ your requirements are met.
 
 ## ◆ Download
 
-> **Current Release: V1.0 Beta 2**
-
-### [⬇ Download Omega Imbue Reroller](../../releases)
+### [⬇ Download the Latest Release](../../releases)
 
 Designed for Windows 10 and Windows 11 (64-bit).
 
 No separate Python or Tesseract installation required.
+
+Download the Windows release ZIP from the release assets.
+Previous versions remain available on the Releases page.
 
 ## ◆ Getting Started
 
@@ -66,12 +73,13 @@ No separate Python or Tesseract installation required.
 2. Extract the entire ZIP into a folder.
 3. Launch `OmegaImbueReroller.exe`.
 4. Open the Imbue Workbench in ARK.
-5. Select your desired essence.
-6. Calibrate the stat panel and essence click location.
-7. Use **Read Current Stats** to verify recognition.
-8. Configure your desired imbue requirements.
-9. Test using Dry Run before starting.
-10. Select **Start New Batch**.
+5. Select the monitor running ARK.
+6. Select your desired essence.
+7. Calibrate the stat panel and essence click location.
+8. Use **Read Current Stats** to verify recognition.
+9. Configure your desired imbue requirements.
+10. Test using Dry Run before starting.
+11. Select **Start New Batch**.
 
 ## ◆ Keyboard Controls
 
@@ -99,7 +107,47 @@ This application is currently in public beta testing.
 
 Feedback, bug reports and feature requests are welcome.
 
-### V1.0 Beta 2
+## ◆ Changelog
+
+### V1.0 Beta 4 — Target Tracking & OCR Improvements
+
+**Interface Improvements**
+
+- Dedicated target tracking panel
+- Required, current and best-value tracking
+- Bold cyan highlighting for targeted stats
+- Green highlighting for satisfied requirements
+- Targeted stats pinned to the top
+- Organized, scrollable best-values table
+
+**Recognition Improvements**
+
+- Case-insensitive stat recognition
+- Automatic minor OCR spelling correction
+- Duplicate stat-name prevention
+- Improved punctuation and whitespace handling
+- Standardized recognition of 24 known imbue stats
+- Diagnostic logging for unrecognized stats
+- Protection against conflicting duplicate values
+- Preserved distinction between flat and percentage stats
+
+**Performance**
+
+- No additional OCR passes
+- Existing high-speed rolling engine retained
+- Adaptive lag recovery retained
+
+### V1.0 Beta 3 — Multi-Monitor Update
+
+- Dedicated ARK monitor selection
+- Improved multi-monitor calibration
+- Display resolution and position identification
+- Improved Windows display scaling support
+- Support for negative monitor coordinates
+- Calibration validation when display layouts change
+- Existing OCR performance retained
+
+### V1.0 Beta 2 — Recognition & Batch Improvements
 
 - Searchable stat selection dropdown
 - Improved stat matching
@@ -107,6 +155,16 @@ Feedback, bug reports and feature requests are welcome.
 - Independent batch and resume controls
 - Improved target configuration management
 - Standalone Windows packaging
+
+### V1.0 Beta 1 — Initial Release
+
+- Initial standalone Windows release
+- Automated imbue rerolling
+- Configurable target requirements
+- All 12 essence tiers supported
+- Tek-inspired interface
+- Adaptive lag recovery
+- Emergency stop and pause controls
 
 ## ◆ Bug Reports
 
@@ -118,9 +176,22 @@ Please include:
 
 - Application version
 - Screen resolution
+- Number of connected monitors
 - Windows version
 - Description of the problem
 - Diagnostic log, with personal information removed
+
+## ◆ Community Feedback
+
+Omega Imbue Reroller is actively being improved based
+on feedback from the ARK Omega community.
+
+Thank you to everyone participating in beta testing,
+reporting bugs and suggesting new features.
+
+Have an idea for improving the application?
+
+[Submit a feature request here.](../../issues)
 
 ## ⚠ Disclaimer
 
@@ -145,6 +216,8 @@ and never disable antivirus protection to run it.
 
 **Built for the Omega community.**
 
-TEK EDITION • V1.0 BETA 2
+TEK EDITION • LESS CLICKING. MORE PLAYING.
+
+[DOWNLOAD](../../releases) • [REPORT A BUG](../../issues)
 
 </div>
